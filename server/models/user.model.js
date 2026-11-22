@@ -18,9 +18,14 @@ required: 'Email is required'
 type: Date,
 default: Date.now
    },
- updated: {
-type: Date,
-default: Date.now
+updated: {
+  type: Date,
+  default: Date.now
+},
+role: {
+  type: String,
+  enum: ['user', 'admin'],
+  default: 'user'
 },
 hashed_password: {
 type: String,
